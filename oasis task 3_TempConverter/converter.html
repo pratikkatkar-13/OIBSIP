@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Temperature Converter</title>
+    <link rel="stylesheet"  href = "tasktwo.css">
+  </head>
+  <body style="background-color: bisque;">
+    <div class="main">
+      <div>
+        <h1>Temperature Converter</h1>
+      </div>
+      <form>
+        <div class="xy">
+            <div class="ab">
+              <label for="temperature">Temperature :</label>
+              <input type="number" id="temperature" name="temperature">
+            </div>  
+            <br>
+          <div>
+            <label for="conversionType">Conversion type:</label>
+            <select id="conversionType" name="conversionType" >
+              <option value="">Please select an option</option>
+              <option value="celsiusToFar">Celsius to Fahrenheit</option>
+              <option value="farToCelsius">Fahrenheit to Celsius</option>
+            </select>
+      </div>
+        </div>
+      <br>
+      <div class="ab">
+        <form>
+        <input type ="button" value="CONVERT" onclick="convertTemperature()">
+        </form>
+      </form>
+      <br><br>
+        <div id="result" style="font-size:x-large; font-weight: 600; font-family: 'Times New Roman', Times, serif;">
+        </div>
+    </div>
+
+
+
+    <script>
+      function convertTemperature() {
+        const conversionType = document.getElementById("conversionType").value;
+        const temp = document.getElementById("temperature").value;
+        let result = "";
+        
+        if (conversionType === "celsiusToFar") {
+          result = `${temp} degrees Celsius is equal to ${(temp * 9/5) + 32} degrees Fahrenheit.`;
+        } else {
+          result = `${temp} degrees Fahrenheit is equal to ${(temp - 32) * 5/9} degrees Celsius.`;
+        }
+        
+        document.getElementById("result").innerHTML = result;
+      }
+      </script>
+
+
+  </body>
+</html>

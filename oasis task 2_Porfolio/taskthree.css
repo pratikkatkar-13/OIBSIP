@@ -1,0 +1,52 @@
+.hero{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.ab{
+    margin-top: 25px;
+    
+}
+
+input[type =button], input[type =submit]
+{
+    background-color: rgb(189, 224, 237);
+    font-weight:700;
+    font-size: medium;
+    color: rgb(0, 0, 0);
+    padding: 16px 32px;
+    margin: 4px 2px;
+    margin-right: 20px;
+    border-style:solid;
+    border-radius: 15%;
+    border-width: 7px;
+    border-color: black;
+    cursor: pointer;
+}
+
+.bod{
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.info{
+
+    font-family:'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-weight: 600;
+    font-size:210%;
+    color: rgb(140, 30, 168);
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-right: 20px;
+}
+
+.icon{
+    display: flex;
+    justify-content:baseline;
+    margin-bottom: 15px;
+}
+
+

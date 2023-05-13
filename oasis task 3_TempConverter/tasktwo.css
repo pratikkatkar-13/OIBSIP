@@ -1,0 +1,42 @@
+.main{
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    justify-content: center;
+}
+ 
+
+    input[type=number],input[type = button]
+    {
+        background-color: rgb(189, 224, 237);
+        font-weight:700;
+        font-size: medium;
+        color: rgb(0, 0, 0);
+        padding: 16px 32px;
+        margin: 4px 2px;
+        border-style:solid;
+        border-radius: 12%;
+        border-width: 7px;
+        border-color: black;
+        cursor: pointer;
+    }
+
+    select{
+        background-color: rgb(189, 224, 237);
+        font-weight:700;
+        font-size: medium;
+        color: rgb(0, 0, 0);
+        padding: 16px 32px;
+        margin: 4px 2px;
+        border-style:solid;
+        border-radius: 12%;
+        border-width: 7px;
+        border-color: black;
+        cursor: pointer;
+    }
+
+
+.xy{
+    display: flex;
+    justify-content: space-around;
+}
